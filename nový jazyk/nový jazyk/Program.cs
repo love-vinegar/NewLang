@@ -12,6 +12,9 @@ namespace nový_jazyk
             {
                 LineDefiner.GessLine(item);
             }
+
+
+            Console.ReadKey();
         }
     }
 }

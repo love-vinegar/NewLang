@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programovani\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+      "projectUniqueName": "D:\\NewLang\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
       "projectName": "nový jazyk",
-      "projectPath": "D:\\programovani\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+      "projectPath": "D:\\NewLang\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
       "packagesPath": "C:\\Users\\42073\\.nuget\\packages\\",
-      "outputPath": "D:\\programovani\\nový jazyk\\nový jazyk\\obj\\",
+      "outputPath": "D:\\NewLang\\nový jazyk\\nový jazyk\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\42073\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,18 +53,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

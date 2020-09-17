@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XyJH2Wf6oTHUqeVU9Shs02WwwRnhltWivt1wBRYRLMM8Rrafol8EGTXvVVFWiKZ2vyqM/Wr2j3CDH6bZZ4rfGg==",
+  "success": true,
+  "projectFilePath": "D:\\programovani\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\42073\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

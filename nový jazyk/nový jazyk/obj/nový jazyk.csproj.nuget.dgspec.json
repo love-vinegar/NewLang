@@ -1,31 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NewLang\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {}
+    "Z:\\code\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {}
   },
   "projects": {
-    "D:\\NewLang\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {
+    "Z:\\code\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NewLang\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+        "projectUniqueName": "Z:\\code\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
         "projectName": "nový jazyk",
-        "projectPath": "D:\\NewLang\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
-        "packagesPath": "C:\\Users\\42073\\.nuget\\packages\\",
-        "outputPath": "D:\\NewLang\\nový jazyk\\nový jazyk\\obj\\",
+        "projectPath": "Z:\\code\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+        "packagesPath": "C:\\Users\\ployer.david.2017\\.nuget\\packages\\",
+        "outputPath": "Z:\\code\\NewLang-master\\nový jazyk\\nový jazyk\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\42073\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ployer.david.2017\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp2.1": {
             "projectReferences": {}
           }
         },
@@ -36,23 +41,19 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
+        "netcoreapp2.1": {
+          "dependencies": {
             "Microsoft.NETCore.App": {
-              "privateAssets": "all"
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
             }
           },
-          "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
         }
       }
     }

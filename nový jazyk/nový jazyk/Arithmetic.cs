@@ -37,7 +37,7 @@ namespace nový_jazyk
                     ans = Dividing(a, b);
                     break;
             }
-            variables.creation(lineSplits[0], ans);
+            variables.SetValue(lineSplits[0], ans);
         }
         #region základní operace
         private static string Adding(string a, string b) {

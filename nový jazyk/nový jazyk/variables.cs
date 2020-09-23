@@ -8,7 +8,7 @@ namespace nový_jazyk
     {
         static Dictionary<string, string> vars = new Dictionary<string, string>();
       
-        public static void creation(string Name, string Value)
+        public static void SetValue(string Name, string Value)
         {
 
             if (vars.ContainsKey(Name))

@@ -1,0 +1,3 @@
+﻿jmeno = jmeno2 = ahoj
+OUT = jmeno
+OUT = jmeno2

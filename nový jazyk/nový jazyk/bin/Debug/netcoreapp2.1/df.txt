@@ -1,0 +1,5 @@
+zprava1 = Ahoj jak se jmenujes
+OUT = zprava1
+jmeno = IN
+zprava2 = Ahoj Kryštofe mega frajere
+OUT = zprava2

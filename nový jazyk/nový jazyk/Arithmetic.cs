@@ -8,14 +8,14 @@ namespace nový_jazyk
 {
     class Arithmetic
     {
-        public static void basicOperations(string line) {
+        public static string basicOperations(string line) {
             string[] lineSplits = line.Split(' ');
             string a, b;
-            string sign = lineSplits[3];
+            string sign = lineSplits[1];
             string ans = "";
-            if (Regex.Match(line, "[A-Za-z]+[A-Za-z0-9]* = [A-Za-z]+[A-Za-z0-9]* [+\\-\\*\\/] [A-Za-z]+[A-Za-z0-9]*").Value == line)
+            if (Regex.Match(line, "[A-Za-z]+[A-Za-z0-9]* [+\\-\\*\\/] [A-Za-z]+[A-Za-z0-9]*").Value == line)
             {
-                a = variables.GetValue(lineSplits[2]);b = variables.GetValue(lineSplits[4]);
+                a = variables.GetValue(lineSplits[0]);b = variables.GetValue(lineSplits[2]);
             }
             else
             {
@@ -37,7 +37,7 @@ namespace nový_jazyk
                     ans = Dividing(a, b);
                     break;
             }
-            variables.SetValue(lineSplits[0], ans);
+            return ans;
         }
         #region základní operace
         private static string Adding(string a, string b) {

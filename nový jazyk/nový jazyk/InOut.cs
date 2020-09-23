@@ -7,8 +7,8 @@ namespace nový_jazyk
 {
     class InOut
     {
-        public static void input(string Name) {
-            variables.SetValue(Name, Console.ReadLine()); 
+        public static string input() {
+            return Console.ReadLine(); 
         }
 
         public static void output(string Name) {

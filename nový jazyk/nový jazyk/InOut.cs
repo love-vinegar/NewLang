@@ -10,9 +10,9 @@ namespace nový_jazyk
         public static string input() {
             return Console.ReadLine(); 
         }
-
-        public static void output(string Name) {
-            Console.WriteLine(variables.GetValue(Name));
+        public static void output(string Value)
+        {
+            Console.WriteLine(Value.TrimStart('*'));
         }
     }
 }

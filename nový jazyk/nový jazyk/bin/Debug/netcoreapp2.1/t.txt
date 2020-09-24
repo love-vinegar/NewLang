@@ -1,9 +1,7 @@
-zprava = Napiš číslo
-OUT = zprava
+OUT = *zadejte cislo
 cislo1 = IN
-OUT = zprava
+OUT = *zadejte cislo
 cislo2 = IN
-vysledek = cislo1 * cislo2
-zprava2 = násobek je
-OUT = zprava2
-OUT = vysledek
+OUT = *Soucet je
+vypocet = cislo1 + cislo2
+OUT = vypocet

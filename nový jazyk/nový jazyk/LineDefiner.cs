@@ -7,19 +7,9 @@ namespace nový_jazyk
 {
     class LineDefiner
     {
-        public static void GessLine(string line) {
+        public static void Define(string line) {
             string[] g = line.Split("=");
             string value = g[g.Length - 1].TrimStart(' ');
-
-            for (int i = 0; i < g.Length -1; i++)
-            {
-                if (g[i].Contains("OUT"))
-                {
-                    InOut.output(value);
-                }
-            }
-
-
 
             #region new 
             string v = GetValue(value);
@@ -78,9 +68,13 @@ namespace nový_jazyk
                 retValue = Arithmetic.basicOperations(Svalue);
                 
             }
-            else if (Regex.Match(Svalue, ".*").Value == Svalue)//hard code values
+            else if (Regex.Match(Svalue, "\\*.*").Value == Svalue)//hard code values
             {
                 retValue = Svalue;
+            }
+            else if (variables.ValueExists(Svalue))
+            {
+                retValue = variables.GetValue(Svalue);
             }
 
             return retValue;

@@ -10,7 +10,7 @@ namespace nový_jazyk
           string[] AllLines = File.ReadAllLines("t.txt");
             foreach (var item in AllLines) 
             {
-                LineDefiner.GessLine(item);
+                LineDefiner.Define(item);
             }
 
 

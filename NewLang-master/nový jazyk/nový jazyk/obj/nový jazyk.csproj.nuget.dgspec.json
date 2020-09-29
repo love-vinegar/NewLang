@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ployer.david.2017\\Desktop\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ployer.david.2017\\Desktop\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ployer.david.2017\\Desktop\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+        "projectName": "nový jazyk",
+        "projectPath": "C:\\Users\\ployer.david.2017\\Desktop\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+        "packagesPath": "C:\\Users\\ployer.david.2017\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ployer.david.2017\\Desktop\\NewLang-master\\nový jazyk\\nový jazyk\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ployer.david.2017\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

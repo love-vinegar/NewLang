@@ -8,14 +8,14 @@ namespace nový_jazyk
 {
     class Arithmetic
     {
-        public static string basicOperations(string line) {
+        public static string basicOperations(string line, variables vars) {
             string[] lineSplits = line.Split(' ');
             string a, b;
             string sign = lineSplits[1];
             string ans = "";
             if (Regex.Match(line, "[A-Za-z]+[A-Za-z0-9]* [+\\-\\*\\/] [A-Za-z]+[A-Za-z0-9]*").Value == line)
             {
-                a = variables.GetValue(lineSplits[0]);b = variables.GetValue(lineSplits[2]);
+                a = vars.GetValue(lineSplits[0]);b = vars.GetValue(lineSplits[2]);
             }
             else
             {

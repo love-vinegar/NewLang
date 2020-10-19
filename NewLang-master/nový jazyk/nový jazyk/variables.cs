@@ -6,9 +6,10 @@ namespace nový_jazyk
 {
     class variables
     {
-        static Dictionary<string, string> vars = new Dictionary<string, string>();
-      private static string OUT { set { InOut.output(value); } }
-        public static void SetValue(string Name, string Value)
+
+         Dictionary<string, string> vars = new Dictionary<string, string>();
+      private  string OUT { set { InOut.output(value); } }
+        public  void SetValue(string Name, string Value)
         {
             if (Name == "OUT")
             {
@@ -23,7 +24,7 @@ namespace nový_jazyk
 
         }
 
-        public static string GetValue(string Name) {
+        public string GetValue(string Name) {
             if (vars.ContainsKey(Name))
             {
                 return vars[Name];
@@ -33,7 +34,7 @@ namespace nový_jazyk
             
         }
 
-        public static bool ValueExists(string Name) {
+        public bool ValueExists(string Name) {
             return vars.ContainsKey(Name);
         }
     }

@@ -9,13 +9,11 @@ namespace nový_jazyk
 {
     class Methods
     {
-        MethodeVars mv;
         public static object ResolveMethods(string Svalue) {
-            mv = new MethodeVars();
-            MethodLineDef mld = new MethodLineDef(mv);
+            variables mv = new variables();
+            LineDefiner mld = new LineDefiner(mv);
             string file = Svalue.Split('(')[0];
             string[] AllLines = File.ReadAllLines($"{file}.txt");
-
 
 
             foreach (var item in AllLines)
@@ -27,19 +25,13 @@ namespace nový_jazyk
                 if (item.StartsWith("return"))
                 {
                     s = s.Replace("return ", "");
-
-                    return LineDefiner.GetValue(s);
+                    return mld.GetValue(s);
 
                 }
                 mld.Define(item);
             }
 
-            throw new Exception("Method doesnt return :(");
-        }
-        private static void getvv(string line) {
-
-            m
-
+            return "";
         }
     }
 }

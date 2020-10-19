@@ -8,7 +8,15 @@ namespace nový_jazyk
 {
     class LineDefiner
     {
-        public static void Define(string line) {
+
+        variables var;
+
+        public LineDefiner(variables var) {
+            this.var = var;
+        }
+
+
+        public void Define(string line) {
 
 
 
@@ -26,7 +34,7 @@ namespace nový_jazyk
         }
 
 
-        private static void Enumerate(string line, string value) {
+        private void Enumerate(string line, string value) {
             string[] g = line.Split("=");
             string[] objs = new string[g.Length -1 ];
 
@@ -37,12 +45,12 @@ namespace nový_jazyk
 
             foreach (var item in objs)
             {
-                variables.SetValue(item,value);
+                var.SetValue(item,value);
             }
 
         }
 
-        public static string GetValue(string Svalue) {
+        public string GetValue(string Svalue) {
             string retValue = "";
 
 
@@ -53,7 +61,7 @@ namespace nový_jazyk
             else if (Regex.Match(Svalue, "[A-Za-z]+[A-Za-z0-9]* [+\\-\\*\\/] [A-Za-z]+[A-Za-z0-9]*").Value == Svalue ||
         Regex.Match(Svalue, "[0-9]* [+\\-\\*\\/] [0-9]*").Value == Svalue) // základní aritmetika
             {
-                retValue = Arithmetic.basicOperations(Svalue);
+                retValue = Arithmetic.basicOperations(Svalue, var);
 
             }
             else if (Regex.Match(Svalue, "\\*.*").Value == Svalue)//hard code values
@@ -64,11 +72,10 @@ namespace nový_jazyk
             {
                retValue = Methods.ResolveMethods(Svalue).ToString();
 
-
             } 
-            else if (variables.ValueExists(Svalue))
+            else if (var.ValueExists(Svalue))
             {
-                retValue = variables.GetValue(Svalue);
+                retValue = var.GetValue(Svalue);
             }
 
             return retValue;

@@ -28,10 +28,17 @@ namespace nový_jazyk
              */
         static void Main(string[] args)
         {
+
+
+
           string[] AllLines = File.ReadAllLines("t.txt");
+
+
+            variables MainVars = new variables();
+            LineDefiner MainLD = new LineDefiner(MainVars);
             foreach (var item in AllLines) 
             {
-                LineDefiner.Define(item);
+                MainLD.Define(item);
             }
 
 

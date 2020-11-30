@@ -1,1 +1,4 @@
-ahoj()
+ahoj = IN
+ahoj1 = IN
+OUT = ahoj & ahoj1
+OUT = ahoj | ahoj1

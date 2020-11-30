@@ -26,15 +26,12 @@ namespace nový_jazyk
              
              
              */
+        public static variables MainVars;
         static void Main(string[] args)
         {
-
-
-
           string[] AllLines = File.ReadAllLines("t.txt");
 
-
-            variables MainVars = new variables();
+             MainVars = new variables();
             LineDefiner MainLD = new LineDefiner(MainVars);
             foreach (var item in AllLines) 
             {

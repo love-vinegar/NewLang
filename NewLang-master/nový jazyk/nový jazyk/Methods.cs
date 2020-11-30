@@ -13,6 +13,8 @@ namespace nový_jazyk
             variables mv = new variables();
             LineDefiner mld = new LineDefiner(mv);
             string file = Svalue.Split('(')[0];
+            string parameters = Svalue.Split('(')[1].TrimEnd(')');
+            GetParameters(parameters, mv);
             string[] AllLines = File.ReadAllLines($"{file}.txt");
 
 
@@ -32,6 +34,16 @@ namespace nový_jazyk
             }
 
             return "";
+        }
+
+
+
+        private static void GetParameters(string parameters, variables vars) {
+            string[] par = parameters.Split(',');
+            foreach (var item in par)
+            {
+                vars.SetValue(item.Trim(' '), Program.MainVars.GetValue(item.Trim(' ')));
+            }
         }
     }
 }

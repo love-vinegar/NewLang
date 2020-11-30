@@ -61,17 +61,26 @@ namespace nový_jazyk
             else if (Regex.Match(Svalue, "[A-Za-z]+[A-Za-z0-9]* [+\\-\\*\\/] [A-Za-z]+[A-Za-z0-9]*").Value == Svalue ||
         Regex.Match(Svalue, "[0-9]* [+\\-\\*\\/] [0-9]*").Value == Svalue) // základní aritmetika
             {
-                retValue = Arithmetic.basicOperations(Svalue, var);
+                retValue = Arithmetic.basicOperationsInt(Svalue, var);
+
+            }
+            else if (Regex.Match(Svalue, "[A-Za-z]+[A-Za-z0-9]* [&|] [A-Za-z]+[A-Za-z0-9]*").Value == Svalue ||
+       Regex.Match(Svalue, "(true|false) [&|] (true|false)").Value == Svalue) // základní aritmetika
+            {
+                retValue = Arithmetic.basicOperationsBool(Svalue, var);
 
             }
             else if (Regex.Match(Svalue, "\\*.*").Value == Svalue)//hard code values
             {
                 retValue = Svalue;
             }
+            else if (Regex.Match(Svalue, "^(true|false)$").Value == Svalue) // bool
+            {
+                retValue = Svalue;
+            }
             else if (Regex.Match(Svalue, "[A-Za-z]+[A-Za-z0-9]+\\(.*\\)").Value == Svalue) // metody
             {
                retValue = Methods.ResolveMethods(Svalue).ToString();
-
             } 
             else if (var.ValueExists(Svalue))
             {

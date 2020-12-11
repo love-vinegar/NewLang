@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {}
+    "E:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {}
   },
   "projects": {
-    "D:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {
+    "E:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+        "projectUniqueName": "E:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
         "projectName": "nový jazyk",
-        "projectPath": "D:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+        "projectPath": "E:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
         "packagesPath": "C:\\Users\\42073\\.nuget\\packages\\",
-        "outputPath": "D:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\obj\\",
+        "outputPath": "E:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

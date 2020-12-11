@@ -12,6 +12,10 @@ namespace nový_jazyk
         }
         public static void output(string Value)
         {
+            if (Value == "")
+            {
+                return;
+            }
             Console.WriteLine(Value.TrimStart('*'));
         }
     }

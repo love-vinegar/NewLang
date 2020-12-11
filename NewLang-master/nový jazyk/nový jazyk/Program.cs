@@ -10,14 +10,14 @@ namespace nový_jazyk
         // inicializace
         // typy
          zápis a čtení - DONE
-         if
+         if - DONE
          switch 
          for 
         // do while
          pole
-         foreach
+        // foreach
          metody 
-         zápis a čtení txt
+        // zápis a čtení txt
          random
          mat fce
          beep 
@@ -33,10 +33,12 @@ namespace nový_jazyk
 
              MainVars = new variables();
             LineDefiner MainLD = new LineDefiner(MainVars);
-            foreach (var item in AllLines) 
+            for (int i = 0; i < AllLines.Length; i++)
             {
-                MainLD.Define(item);
+                MainLD.Define(AllLines[i], ref i);
+
             }
+
 
 
             Console.ReadKey();

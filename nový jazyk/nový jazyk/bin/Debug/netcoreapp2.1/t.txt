@@ -1,7 +1,0 @@
-OUT = *zadejte cislo
-cislo1 = IN
-OUT = *zadejte cislo
-cislo2 = IN
-OUT = *Soucet je
-vypocet = cislo1 + cislo2
-OUT = vypocet

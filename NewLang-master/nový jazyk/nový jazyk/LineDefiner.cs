@@ -45,6 +45,8 @@ namespace nový_jazyk
 
         }
         int SkipLine = -1;
+        int loopNumber = 0;
+        string LoopName = "";
         public string GetValue(string Svalue,ref int Line) {
             string retValue = "";
             if (Line == SkipLine)
@@ -58,14 +60,25 @@ namespace nový_jazyk
                 return "";
             }
 
+            if (loopNumber > 0)
+            {
+                loopNumber--;
+                Line--;
+
+                var.SetValue(LoopName, (loopNumber).ToString());
+                if (loopNumber == 0)
+                {
+                    SkipLine = Line + 1;
+                }
+            }
+
             if (Regex.Match(Svalue, "IN").Value == Svalue)//pro in
             {
                 retValue = InOut.input();
             }
-            if (Regex.Match(Svalue, "^IF\\(.+\\)").Value == Svalue)//pro if
+            else if (Regex.Match(Svalue, "^IF\\(.+\\)").Value == Svalue)//pro if
             {
-                string[] split = Svalue.Split('(');
-                string work = split[1].TrimEnd(')');
+                string work = Svalue.Split('(')[1].TrimEnd(')');
                 string toIf = GetValue(work,ref Line);
                 if (!Convert.ToBoolean(toIf))
                 {
@@ -74,6 +87,21 @@ namespace nový_jazyk
                 else
                 {
                     SkipLine = Line + 2;
+                }
+            }
+            else if (Regex.Match(Svalue, "^LOOP\\(.+\\)").Value == Svalue)//pro loop
+            {
+                string work = Svalue.Split('(')[1].TrimEnd(')');
+                string[] split = work.Split(' ');
+                if (split.Length == 2)
+                {
+                    var.SetValue(split[0], split[1]);
+                    loopNumber = Convert.ToInt32(GetValue(split[1], ref Line));
+                    LoopName = split[0];
+                }
+                else
+                {
+                    loopNumber = Convert.ToInt32(GetValue(split[0], ref Line));
                 }
             }
             else if (Regex.Match(Svalue, "([A-Za-z]+[A-Za-z0-9]*|[0-9]*) [+\\-\\*\\/&|^<>] ([A-Za-z]+[A-Za-z0-9]*|[0-9]*)").Value == Svalue) // základní aritmetika

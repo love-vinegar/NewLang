@@ -1,9 +1,0 @@
-zprava = Napiš číslo
-OUT = zprava
-cislo1 = IN
-OUT = zprava
-cislo2 = IN
-vysledek = cislo1 * cislo2
-zprava2 = násobek je
-OUT = zprava2
-OUT = vysledek

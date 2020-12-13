@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3sg4BrbGuHzkpdHCKTWQn1VeOKgb1wW9YqY40/S1uJJUUDI1Ym5tmtOnkC+mDElkuhU9hXE6KdMi8MkONZwHqQ==",
+  "dgSpecHash": "cbsugBuEz6tb8TW02vysHz1rPf4XggWUlumJiqjdRZ/DaYmpWMGgY7iGLkG3sRtM47l728sMt2Y3GNijRqwfSw==",
   "success": true,
-  "projectFilePath": "E:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
+  "projectFilePath": "D:\\NewLang\\NewLang-master\\nový jazyk\\nový jazyk\\nový jazyk.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\42073\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
     "C:\\Users\\42073\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",

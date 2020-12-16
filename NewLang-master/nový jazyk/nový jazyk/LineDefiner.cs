@@ -46,6 +46,9 @@ namespace nový_jazyk
         }
         int SkipLine = -1;
         int loopNumber = 0;
+        int loopVar = 0;
+
+
         string LoopName = "";
         public string GetValue(string Svalue,ref int Line) {
             string retValue = "";
@@ -64,12 +67,13 @@ namespace nový_jazyk
             {
                 loopNumber--;
                 Line--;
-
-                var.SetValue(LoopName, (loopNumber).ToString());
+                var.SetValue(LoopName, (loopVar).ToString());
                 if (loopNumber == 0)
                 {
                     SkipLine = Line + 1;
                 }
+
+                loopVar++;
             }
 
             if (Regex.Match(Svalue, "IN").Value == Svalue)//pro in
@@ -95,16 +99,17 @@ namespace nový_jazyk
                 string[] split = work.Split(' ');
                 if (split.Length == 2)
                 {
-                    var.SetValue(split[0], split[1]);
+                    var.SetValue(split[0], "0");
                     loopNumber = Convert.ToInt32(GetValue(split[1], ref Line));
                     LoopName = split[0];
+                    loopVar = 0;
                 }
                 else
                 {
                     loopNumber = Convert.ToInt32(GetValue(split[0], ref Line));
                 }
             }
-            else if (Regex.Match(Svalue, "([A-Za-z]+[A-Za-z0-9]*|[0-9]*) [+\\-\\*\\/&|^<>] ([A-Za-z]+[A-Za-z0-9]*|[0-9]*)").Value == Svalue) // základní aritmetika
+            else if (Regex.Match(Svalue, "(\\*?[A-Za-z]+[A-Za-z0-9]*|[0-9]*) [+\\-\\*\\/&|^<>] (\\*?[A-Za-z]+[A-Za-z0-9]*|[0-9]*)").Value == Svalue) // základní aritmetika
             {
                 retValue = Arithmetic.basicOperations(Svalue, var);
             }

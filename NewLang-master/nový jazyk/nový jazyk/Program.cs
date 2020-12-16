@@ -29,19 +29,15 @@ namespace nový_jazyk
         public static variables MainVars;
         static void Main(string[] args)
         {
-          string[] AllLines = File.ReadAllLines("t.txt");
+            string[] AllLines = File.ReadAllLines(Console.ReadLine());
 
-             MainVars = new variables();
+            MainVars = new variables();
             LineDefiner MainLD = new LineDefiner(MainVars);
             for (int i = 0; i < AllLines.Length; i++)
             {
                 MainLD.Define(AllLines[i], ref i);
 
             }
-
-
-
-            Console.ReadKey();
         }
     }
 }

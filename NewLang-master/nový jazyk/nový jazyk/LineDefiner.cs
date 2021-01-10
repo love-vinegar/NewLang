@@ -109,15 +109,19 @@ namespace nový_jazyk
                     loopNumber = Convert.ToInt32(GetValue(split[0], ref Line));
                 }
             }
-            else if (Regex.Match(Svalue, "(\\*?[A-Za-z]+[A-Za-z0-9]*|[0-9]*) [+\\-\\*\\/&|^<>] (\\*?[A-Za-z]+[A-Za-z0-9]*|[0-9]*)").Value == Svalue) // základní aritmetika
+            else if (Regex.Match(Svalue, "(\\*?[A-Za-z]+[A-Za-z0-9]*|[0-9]*) [+\\-\\*\\/&|^<>] (\\*?[A-Za-z]+[A-Za-z0-9]*|[0-9]*)").Value == Svalue) // základní aritmetika dvě 
             {
                 retValue = Arithmetic.basicOperations(Svalue, var);
+            }
+            else if (Regex.Match(Svalue, "[!] (\\*?[A-Za-z]+[A-Za-z0-9]*|[0-9]*)").Value == Svalue) // základní aritmetika jedna
+            {
+                retValue = Arithmetic.basicOperaticonsSingle(Svalue, var);
             }
             else if (Regex.Match(Svalue, "^\\*.*").Value == Svalue)//string
             {
                 retValue = Svalue;
             }
-            else if (Regex.Match(Svalue, "^(true|false)$").Value == Svalue) //bool
+            else if (Regex.Match(Svalue, "^(True|False)$").Value == Svalue) //bool
             {
                 retValue = Svalue;
             }

@@ -114,6 +114,35 @@ namespace nový_jazyk
         }
         #endregion
 
+        public static string basicOperaticonsSingle(string line, variables vars) {
 
+            string[] lineSplits = line.Split(' ');
+            string a;
+            string sign = lineSplits[0];
+            string ans = "";
+
+
+            if (vars.ValueExists(lineSplits[1]))
+            {
+                a = vars.GetValue(lineSplits[1]).TrimStart('*');
+            }
+            else
+            {
+                a = lineSplits[1].TrimStart('*');
+            }
+
+            switch (sign)
+            {
+                case "!":
+                    ans = negation(a);
+                    break;
+            }
+
+            return ans;
+        }
+
+        private static string negation(string a) {
+            return (!Convert.ToBoolean(a)).ToString();
+        }
     }
 }

@@ -1,3 +1,0 @@
-int int1
-vypocet = int * int1
-return vypocet

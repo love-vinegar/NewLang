@@ -8,12 +8,17 @@ namespace nový_jazyk
     {
 
          Dictionary<string, string> vars = new Dictionary<string, string>();
-      private  string OUT { set { InOut.output(value); } }
-        public  void SetValue(string Name, string Value)
+      private  string OUTLINE { set { InOut.outputLine(value); } }
+        private string OUTPART { set { InOut.outputPart(value); } }
+        public void SetValue(string Name, string Value)
         {
-            if (Name == "OUT")
+            if (Name == "OUTLINE")
             {
-                OUT = Value;
+                OUTLINE = Value;
+            }
+            if (Name == "OUTPART")
+            {
+                OUTPART = Value;
             }
 
             if (vars.ContainsKey(Name))

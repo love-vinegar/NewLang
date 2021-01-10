@@ -10,13 +10,21 @@ namespace nový_jazyk
         public static string input() {
             return Console.ReadLine(); 
         }
-        public static void output(string Value)
+        public static void outputLine(string Value)
         {
             if (Value == "")
             {
                 return;
             }
             Console.WriteLine(Value.TrimStart('*'));
+        }
+        public static void outputPart(string Value)
+        {
+            if (Value == "")
+            {
+                return;
+            }
+            Console.Write(Value.TrimStart('*'));
         }
     }
 }

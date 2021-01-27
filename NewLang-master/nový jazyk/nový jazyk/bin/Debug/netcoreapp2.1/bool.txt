@@ -1,0 +1,16 @@
+OUT = *napište první bool
+bool1 = IN
+OUT = *napište druhý bool
+bool2 = IN
+
+OUTPART = *AND 
+OUT = bool1 & bool2
+
+OUTPART = *OR 
+OUT = bool1 | bool2
+
+OUTPART = *negace prvního 
+OUT = ! bool1
+
+OUTPART = *negace druhého 
+OUT= ! bool2

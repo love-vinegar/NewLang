@@ -12,7 +12,7 @@ namespace nový_jazyk
         private string OUTPART { set { InOut.outputPart(value); } }
         public void SetValue(string Name, string Value)
         {
-            if (Name == "OUTLINE")
+            if (Name == "OUT")
             {
                 OUTLINE = Value;
             }

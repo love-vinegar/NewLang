@@ -1,0 +1,17 @@
+OUT = *zadejte první číslo
+cislo = IN
+OUT = *zadejte druhé číslo
+cislo1 = IN
+
+delitelnost = cislo % cislo1
+
+
+OUTPART = *číslo 
+OUTPART = cislo
+
+IF(delitelnost ^ 0)
+OUTPART = * je
+OUTPART = * není
+
+OUTPART = * dělitelné 
+OUTPART = cislo1

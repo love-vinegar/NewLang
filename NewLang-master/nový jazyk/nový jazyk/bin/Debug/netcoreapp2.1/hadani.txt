@@ -1,0 +1,2 @@
+OUT = *myslete si číslo od nuly do 100 
+OUT = hadam(0 100)

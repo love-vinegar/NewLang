@@ -23,10 +23,6 @@ namespace nový_jazyk
             GetParameters(s, parameters, mv, MainVars);
 
 
-            #region parametry
-            
-            #endregion
-
             for (int i = 1; i < AllLines.Length; i++)
             {
                 s = trimmer.Replace(AllLines[i], " ");
@@ -34,7 +30,7 @@ namespace nový_jazyk
                 if (AllLines[i].StartsWith("return"))
                 {
                     s = s.Replace("return ", "");
-                    return mld.GetValue(s,ref i);
+                    return mld.GetValue(s, ref i);
                 }
                 mld.Define(AllLines[i], ref i);
             }

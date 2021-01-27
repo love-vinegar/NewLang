@@ -11,7 +11,7 @@ namespace nový_jazyk
         // typy
          zápis a čtení - DONE
          if - DONE
-         switch 
+        // switch 
          for 
         // do while
          pole
@@ -20,15 +20,18 @@ namespace nový_jazyk
         // zápis a čtení txt
          random
          mat fce
-         beep 
-         sleep
+         // beep 
+         // sleep
              
              
              
              */
+
         public static variables MainVars;
         static void Main(string[] args)
         {
+
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             string[] AllLines = File.ReadAllLines(Console.ReadLine());
 
             MainVars = new variables();

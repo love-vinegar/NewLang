@@ -63,6 +63,9 @@ namespace nový_jazyk
                 case ">":
                     ans = BiggerThan(a, b);
                     break;
+                case "%":
+                    ans = mod(a, b);
+                    break;
             }
             return ans;
         }
@@ -92,6 +95,10 @@ namespace nový_jazyk
         private static string SmallerThan(string a, string b)
         {
             return (Convert.ToInt16(a) < Convert.ToInt16(b)).ToString();
+        }
+        private static string mod(string a, string b)
+        {
+            return (Convert.ToInt16(a) % Convert.ToInt16(b)).ToString();
         }
         //
         // pro bool

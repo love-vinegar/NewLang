@@ -1,0 +1,29 @@
+min max
+OUTPART = *je vaše číslo 
+rozdil = max - min
+delitelnost = rozdil % 2
+rozdil = rozdil - delitelnost
+
+polovina = rozdil / 2
+polovina = polovina + min
+
+OUT = polovina
+
+OUT = *pokud je vaše číslo větší napište "v" pokud menší napište "m" pokud jsem uhádl vaše číslo napište "u"
+rozhodnuti = IN
+
+
+
+IF(rozhodnuti ^ *u)
+vysledek = polovina
+
+
+IF(rozhodnuti ^ *v)
+vysledek = hadam(polovina max)
+
+
+
+IF(rozhodnuti ^ *m)
+vysledek = hadam(min polovina)
+
+return vysledek

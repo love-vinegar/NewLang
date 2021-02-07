@@ -1,0 +1,3 @@
+s1 = *ahoj 
+s2 = *ahoj ahoj
+OUT = s1 + s2

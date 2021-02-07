@@ -9,3 +9,15 @@ Z:\code\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový j
 Z:\code\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.AssemblyInfo.cs
 Z:\code\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.dll
 Z:\code\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.pdb
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\bin\Release\netcoreapp2.1\nový jazyk.deps.json
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\bin\Release\netcoreapp2.1\nový jazyk.runtimeconfig.json
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\bin\Release\netcoreapp2.1\nový jazyk.runtimeconfig.dev.json
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\bin\Release\netcoreapp2.1\nový jazyk.dll
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\bin\Release\netcoreapp2.1\nový jazyk.pdb
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.csprojAssemblyReference.cache
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.AssemblyInfoInputs.cache
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.AssemblyInfo.cs
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.csproj.CoreCompileInputs.cache
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.dll
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.pdb
+D:\NewLang\NewLang-master\nový jazyk\nový jazyk\obj\Release\netcoreapp2.1\nový jazyk.genruntimeconfig.cache

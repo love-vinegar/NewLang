@@ -74,7 +74,14 @@ namespace nový_jazyk
         // pro int
         //
         private static string Adding(string a, string b) {
-            return (Convert.ToInt64(a) + Convert.ToInt64(b)).ToString();
+            try
+            {
+                return (Convert.ToInt64(a) + Convert.ToInt64(b)).ToString();
+            }
+            catch (Exception)
+            {
+                return a + b;
+            }
         }
         private static string Multiply(string a, string b)
         {

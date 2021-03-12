@@ -32,7 +32,8 @@ namespace nový_jazyk
         {
 
             Console.OutputEncoding = System.Text.Encoding.Unicode;
-            string[] AllLines = File.ReadAllLines(Console.ReadLine());
+            string path = Console.ReadLine();
+            string[] AllLines = File.ReadAllLines(path);
 
             MainVars = new variables();
             LineDefiner MainLD = new LineDefiner(MainVars);

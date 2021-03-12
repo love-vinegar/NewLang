@@ -1,0 +1,9 @@
+i
+podeleni = i % 2
+
+IF(podeleni ^ 0)
+vysledek = * je sudé
+
+
+vratit = i + vysledek
+return vratit

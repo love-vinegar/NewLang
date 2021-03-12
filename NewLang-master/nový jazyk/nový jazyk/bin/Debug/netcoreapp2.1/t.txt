@@ -1,0 +1,2 @@
+LOOP(i 10)
+OUT = jesude(i)
